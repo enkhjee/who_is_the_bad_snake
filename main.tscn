@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cgps7xkn4pmri"]
+
+[ext_resource type="Script" uid="uid://o2ea5654r7fh" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://bnntqm7a68hh3" path="res://assets/graphs/mushroom.PNG" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cfwq7qbr5a18s" path="res://assets/graphs/potion.PNG" id="3_1bvp3"]
+
+[node name="Main" type="Node2D" unique_id=442725738]
+script = ExtResource("1_ig7tw")
+
+[node name="TopBar" type="HBoxContainer" parent="." unique_id=1730871587]
+offset_left = 60.0
+offset_right = 100.0
+offset_bottom = 50.0
+theme_override_constants/separation = 20
+
+[node name="ScoreLabel" type="Label" parent="TopBar" unique_id=2004004948]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Score: 0"
+vertical_alignment = 1
+
+[node name="MushroomIcon" type="TextureRect" parent="TopBar" unique_id=135520970]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+texture = ExtResource("2_h2yge")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PoisonLabel" type="Label" parent="TopBar" unique_id=1098297262]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "-30"
+vertical_alignment = 1
+
+[node name="PotionIcon" type="TextureRect" parent="TopBar" unique_id=206699236]
+visible = false
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+texture = ExtResource("3_1bvp3")
+expand_mode = 1
+stretch_mode = 5
